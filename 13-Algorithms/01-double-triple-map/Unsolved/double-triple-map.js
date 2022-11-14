@@ -3,8 +3,10 @@
 // If an element in the original array is odd, the element at the same index of the new array should be triple the original element
 
 var doubleTripleMap = function(arr) {
+    // declare a new empty array to be returned after exiting the for loop
     const newArray = [];
 
+    // loop through the array. If an element in the array is divisible by two with no remainder, then the element is even, and its value is doubled and pushed into the new array. Else, the number is odd and it is tripled before being pushed into the new array.
     for ( i = 0; i < arr.length; i++ ) {
         if (arr[i] % 2 === 0 ) {
             newArray.push(arr[i] * 2);
